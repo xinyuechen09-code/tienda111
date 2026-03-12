@@ -94,12 +94,19 @@ h2 { margin-top: 28px; }
     border-radius: 4px;
 }
 
+.kpi-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* Ajusta el ancho para que quepan varios en línea */
+    flex: 1; 
+    margin: 10px;
+}
 
 
-.tarjeta-kpi h3 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    color: #333;
 }
 
 
