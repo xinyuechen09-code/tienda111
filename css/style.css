@@ -83,19 +83,6 @@ th, td {
   color: #333;
 }
 
-.kpi-box {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    /* Ajusta el ancho para que quepan varios en línea */
-    flex: 1; 
-    margin: 10px;
-}
-
-
 
 @media (max-width: 900px) {
   .kpis { grid-template-columns: repeat(2, 1fr); }
