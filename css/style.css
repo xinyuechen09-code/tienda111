@@ -83,17 +83,6 @@ th, td {
   color: #333;
 }
 
-.tarjeta-kpi {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 24px;
-    h1 { margin: 0 0 8px; }
-h2 { margin-top: 28px; }
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.05); /* Sombra suave */
-    text-align: center;
-    border-radius: 4px;
-}
-
 .kpi-box {
     background-color: white;
     border: 1px solid #ddd;
@@ -106,8 +95,6 @@ h2 { margin-top: 28px; }
     margin: 10px;
 }
 
-
-}
 
 
 @media (max-width: 900px) {
