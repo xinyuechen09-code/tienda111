@@ -356,27 +356,7 @@ async function init() {
   // 8) Primer cálculo
   uiClear();
   uiMsg("info", "Dashboard cargado", "Si cambias filtros, verás cómo cambian los KPIs.");
-  updateFiltered(const conteoProductos = filtrado.reduce((acc, item) => {
-    const nombre = item.Producto; // Asegúrate de que la columna se llame "Producto"
-    if (nombre) {
-        acc[nombre] = (acc[nombre] || 0) + 1;
-    }
-    return acc;
-}, {});
-
-// 2. Encontrar el nombre con el valor más alto
-let productoTop = "N/A";
-let maxVentas = 0;
-
-for (const producto in conteoProductos) {
-    if (conteoProductos[producto] > maxVentas) {
-        maxVentas = conteoProductos[producto];
-        productoTop = producto;
-    }
-}
-
-// 3. Pintar en el HTML
-setKPI("kpiTopProducto", productoTop);
+  updateFiltered();
 }
 
 init().catch(err => {
